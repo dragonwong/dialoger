@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	font-family: 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+p {
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-weight: normal;
+}
+	.tag {
+		margin-left: 5px;
+		font-size: 12px;
+		background: rgb(64, 186, 18);
+		color: #fff;
+		border-radius: 4px;
+		padding: 0 4px;
+	}
+.img {
+	width: 100%;
+}
+.input-wrap {
+	margin: 10px;
+	display: flex;
+	align-items: center;
+}
+	.checkbox {
+		margin: 0;
+		vertical-align: middle;
+	}
+	.text {
+		margin-left: 10px;
+		flex: 1;
+		padding: 5px;
+	}
+
+#canvas {
+	display: none;
+}
+
+.button-wrap {
+	text-align: center;
+	margin: 20px 0;
+}
+	#generate {
+		padding: 10px;
+	}
+
+#show img{
+	width: 100%;
+}
+
+.site-footer {
+	color: #888;
+	margin: 40px 0 20px 0;
+	font-size: 12px;
+	text-align: center;
+}
