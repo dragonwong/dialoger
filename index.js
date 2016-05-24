@@ -25,7 +25,8 @@ $("#generate").addEventListener("click", function() {
         if (item.checked) {
 
             if (!item.loaded) {
-                alert('图片加载失败，请检查网络状况并刷新重试');
+                alert('资源加载中，请等待或刷新重试');
+                return;
             }
 
             var img = item.img;
@@ -46,7 +47,7 @@ $("#generate").addEventListener("click", function() {
             ctx.shadowOffsetY = 0;
             ctx.shadowBlur = 1;
             ctx.shadowColor = '#000';
-            ctx.font = '20px 微软雅黑';
+            ctx.font = '22px 微软雅黑';
             ctx.fillStyle = "#fff";
             ctx.fillText(text, 100, 360 + lastHeight);
 
