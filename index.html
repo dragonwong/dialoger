@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<h1>对白生成器<span class="tag">0.0.2</span></h1>
+	<h1>对白生成器<span class="tag">0.0.3</span></h1>
 	<div class="item" data-index="0">
 		<img class="img" src="./img/0.jpg" alt="">
 		<p class="input-wrap">
@@ -49,29 +49,14 @@
 		<p class="contact"><a href="mailto:i@wangdagen.com">Click and contact me</a> (,,•́ . •̀,,)</p>
 	</footer>
 
-	<script src="index.js"></script>
+	<div id="wechat">
+		wechat is sb.
+	</div>
 	<script>
-		(function() {
-			
-			if (!isWechat()) {
-				return
-			}
-
-			if (!wechatSb) {
-				alert('wechatSb!')
-			}
-
-			function isWechat() { 
-				var ua = navigator.userAgent;
-
-				if (ua.indexOf('MicroMessenger') != -1) {
-					return true; 
-				}else{ 
-					return false; 
-				}
-			} 
-		})();
-
+    	document.querySelector('#wechat').style.display = 'none';
 	</script>
+
+
+	<script src="index.js"></script>
 </body>
 </html>

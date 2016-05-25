@@ -1,8 +1,5 @@
 (function() {
 
-    // 为微信注入标记
-    window.wechatSb = true;
-
     var imgInfoList = [];
 
     loadImgs();
