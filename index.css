@@ -60,11 +60,9 @@ h1 {
 }
 
 #wechat {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.5);
-	color: #fff;
+	font-size: 12px;
+	padding: 10px;
+	color: #b94a48;
+	background: #f2dede;
+	line-height: 20px;
 }
