@@ -1,7 +1,5 @@
 (function() {
 
-    $('#wechat').style.display = 'none';
-
     var imgInfoList = [];
 
     loadImgs();

@@ -56,6 +56,25 @@
 		<p class="contact"><a href="mailto:i@wangdagen.com">Click and contact me</a> (,,•́ . •̀,,)</p>
 	</footer>
 
+	<script>
+		(function() {
+			
+			if (isWechat()) {
+				document.querySelector('#wechat').style.display = 'block';
+			}
+
+			function isWechat() { 
+				var ua = navigator.userAgent;
+
+				if (ua.indexOf('MicroMessenger') != -1) {
+					return true; 
+				}else{ 
+					return false; 
+				}
+			} 
+		})();
+	</script>
+
 	<script src="index.js"></script>
 </body>
 </html>
