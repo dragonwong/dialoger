@@ -50,5 +50,28 @@
 	</footer>
 
 	<script src="index.js"></script>
+	<script>
+		(function() {
+			
+			if (!isWechat()) {
+				return
+			}
+
+			if (!wechatSb) {
+				alert('wechatSb!')
+			}
+
+			function isWechat() { 
+				var ua = navigator.userAgent;
+
+				if (ua.indexOf('MicroMessenger') != -1) {
+					return true; 
+				}else{ 
+					return false; 
+				}
+			} 
+		})();
+
+	</script>
 </body>
 </html>
