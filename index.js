@@ -1,8 +1,6 @@
 (function() {
 
-    setTimeout(function() {
-        $('#wechat').style.display = 'none';
-    });
+    fuckWeChat()
 
     var imgInfoList = [];
 
@@ -96,6 +94,32 @@
     }
     function $$(selector) {
         return Array.prototype.slice.call(document.querySelectorAll(selector));
+    }
+
+    function isWechat() { 
+        var ua = navigator.userAgent;
+
+        if (ua.indexOf('MicroMessenger') === -1) {
+            return false; 
+        }else{ 
+            return true; 
+        }
+    }
+
+    function isIOS() { 
+        var ua = navigator.userAgent;
+
+        if (ua.indexOf('iPhone') === -1) {
+            return false; 
+        }else{ 
+            return true; 
+        }
+    }
+
+    function fuckWeChat() {
+        if (isWechat() && isIOS()) {
+            $('#wechat').style.display = 'block';
+        }
     }
 
 })();

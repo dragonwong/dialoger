@@ -9,7 +9,7 @@
 <body>
 
 	<div id="wechat">
-		<p>页面被和谐了，无法正常使用 (⁍̥̥̥᷄д⁍̥̥̥᷅ ू )</p>
+		<p>如果页面被和谐了，导致无法正常使用 (⁍̥̥̥᷄д⁍̥̥̥᷅ ू )</p>
 		<p>请点击右上角按钮，选择在浏览器中打开</p>
 	</div>
 
@@ -55,25 +55,6 @@
 		<p class="copyright">All content copyright <a href="http://wangdagen.com">王大根</a> © 2016 • All rights reserved.</p>
 		<p class="contact"><a href="mailto:i@wangdagen.com">Click and contact me</a> (,,•́ . •̀,,)</p>
 	</footer>
-
-	<script>
-		(function() {
-			
-			if (isWechat()) {
-				document.querySelector('#wechat').style.display = 'block';
-			}
-
-			function isWechat() { 
-				var ua = navigator.userAgent;
-
-				if (ua.indexOf('MicroMessenger') != -1) {
-					return true; 
-				}else{ 
-					return false; 
-				}
-			} 
-		})();
-	</script>
 
 	<script src="index.js"></script>
 </body>
