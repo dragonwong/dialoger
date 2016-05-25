@@ -1,8 +1,6 @@
 (function() {
 
-    setTimeout(function() {
-        $('#wechat').style.display = 'none';
-    });
+    fuckWeChat();
 
     var imgInfoList = [];
 
@@ -67,8 +65,6 @@
         $('#show').appendChild(newImg);
     });
 
-
-
     function loadImgs() {
         for (var i = 0; i < 4; i++) {
             imgInfoList.push({
@@ -98,6 +94,26 @@
     }
     function $$(selector) {
         return Array.prototype.slice.call(document.querySelectorAll(selector));
+    }
+
+    function fuckWeChat() {
+        if (isWechat()) {
+            $('#wechat').style.display = 'block';
+        }
+
+        setTimeout(function() {
+            $('#wechat').style.display = 'none';
+        });
+
+        function isWechat() { 
+            var ua = navigator.userAgent;
+
+            if (ua.indexOf('MicroMessenger') != -1) {
+                return true; 
+            }else{ 
+                return false; 
+            }
+        }
     }
 
 })();
