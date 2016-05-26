@@ -63,6 +63,8 @@
         newImg.src = canvas.toDataURL('image/png');
         $('#show').innerHTML = '';
         $('#show').appendChild(newImg);
+
+        alert('生成成功，长按图片可保存');
     });
 
     function loadImgs() {
